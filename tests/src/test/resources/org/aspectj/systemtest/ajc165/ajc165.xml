@@ -79,10 +79,6 @@
    <ajc-test dir="bugs165/pr272233" title="funky pointcut 2">
      <compile files="Iffy2.java" options="-1.5 -showWeaveInfo">
 
-       <!-- Should occur twice, but messages are identical, so they cannot be counted -->
-       <message kind="warning" text="arrays cannot have a void type, but found 'void[]' in pointcut [Xlint:arrayCannotBeVoid]"/>
-       <message kind="warning" text="arrays cannot have a void type, but found 'void[]' in pointcut [Xlint:arrayCannotBeVoid]"/>
-
        <message kind="warning" text="advice defined in Iffy2 has not been applied [Xlint:adviceDidNotMatch]"     line="14"/>
        <message kind="warning" text="advice defined in Iffy2 has not been applied [Xlint:adviceDidNotMatch]"     line="39"/>
        <message kind="warning" text="advice defined in Iffy2 has not been applied [Xlint:adviceDidNotMatch]"     line="48"/>
